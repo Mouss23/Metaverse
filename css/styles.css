@@ -1,0 +1,186 @@
+*
+
+{
+    font-family: 'Orbitron', sans-serif;
+}
+
+#banner-section
+{
+    padding-top: 15vh;
+    height: 100vh;
+}
+
+#banner-section .text-box
+{
+    margin-top: 8vh;
+}
+
+#banner-section .text-box a
+{
+    padding: 8px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 40px;
+    background: linear-gradient(90deg, rgb(31, 115, 33) 35%, rgb(40, 206, 45) 100%); /* dégradé de couleur boutton */
+}
+
+#banner-section .absolute-image-1
+{
+    background-image: url("../images/illustrations/bg.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    background-position: left top;
+    background-size: 100px 160px;
+}
+
+#banner-section .absolute-image-2
+{
+    background-image: url("../images/illustrations/bg.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    background-position: left top;
+    background-size: 100px 110px;
+}
+
+#banner-section .banner-shake
+{
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    left: 10%;
+    top: 120px;
+    animation: animate-banner-shake 2.5s linear infinite;
+}
+
+@keyframes animate-banner-shake
+{
+    0%
+    {
+        transform: scale(0.8);
+    }
+    50%
+    {
+        transform: scale(1.2);
+    }
+    100%
+    {
+        transform: scale(0.8);
+    }
+}
+
+#services-section .absolute-image-3
+{
+    position: absolute;
+    top: 90%;
+    right: 0;
+    background-image: url("../images/illustrations/Category-bg.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 200px 300px;
+    width: 50%;
+    height: 100%;
+}
+
+#services-section .card 
+{
+    border-radius: 20px;
+    padding-top: 20px;
+    /* width: 300px;
+    height: 300px; */
+}
+
+#services-section .card img
+{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+#details-section ul
+{
+    list-style-type: none;
+}
+
+#details-section .h3-for-row-2
+{
+    margin: 20px;
+}
+
+#details-section i
+{
+    font-size: 20px;
+    animation: up-down 2.5s ease-in-out infinite;
+}
+
+@keyframes up-down 
+{
+    0%
+    {
+        transform: translate(-50%, -1%);
+    }
+
+    50%
+    {
+        transform: translate(-50%, -40%);
+    }
+
+    100%
+    {
+        transform: translate(-50%, -1%);
+    }
+    
+}
+
+#contact-section
+{
+    background-image: url("../images/contact/contact.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+#contact-section .btn
+{
+    border-radius: 30px;
+}
+
+#contact-section div
+{
+    clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
+    height: 100%;
+    background: rgb(255,104,104);
+    background: linear-gradient(0deg, rgba(255,104,104,0.5914740896358543) 0%, rgba(8,161,57,0.5494572829131652) 100%);
+}
+
+footer
+{
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.165);
+}
+
+
+
+
+@media screen and (min-width:768px)
+{
+    #details-section .h3-for-row-2
+{
+    margin: 0;
+}
+
+    #contact-section div
+{
+    clip-path: polygon(50% 8%, 20% 95%, 80% 95%);
+    
+}
+
+}
